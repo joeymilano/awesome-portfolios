@@ -1,0 +1,22 @@
+{
+    "slug":  "rauno-freiberg",
+    "name":  "Rauno Freiberg",
+    "url":  "https://rauno.me",
+    "description":  "Interface design studies with unusually precise attention to micro-interaction timing and easing.",
+    "stack":  [
+                  "Next.js",
+                  "React",
+                  "CSS"
+              ],
+    "tags":  [
+                 "minimal",
+                 "interactive",
+                 "designer"
+             ],
+    "location":  "Estonia",
+    "social":  {
+                   "twitter":  "raunofreiberg",
+                   "github":  "raunofreiberg"
+               },
+    "added":  "2026-01-15"
+}

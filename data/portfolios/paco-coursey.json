@@ -1,0 +1,21 @@
+{
+    "slug":  "paco-coursey",
+    "name":  "Paco Coursey",
+    "url":  "https://paco.me",
+    "description":  "Extremely spare personal site from the author of cmdk, where restraint is the entire design decision.",
+    "stack":  [
+                  "Next.js",
+                  "MDX"
+              ],
+    "tags":  [
+                 "minimal",
+                 "dark",
+                 "developer"
+             ],
+    "location":  "United States",
+    "social":  {
+                   "twitter":  "pacocoursey",
+                   "github":  "pacocoursey"
+               },
+    "added":  "2026-01-15"
+}

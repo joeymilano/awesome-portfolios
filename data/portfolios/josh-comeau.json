@@ -1,0 +1,23 @@
+{
+    "slug":  "josh-comeau",
+    "name":  "Josh W. Comeau",
+    "url":  "https://www.joshwcomeau.com",
+    "description":  "Playful, heavily interactive blog where nearly every article ships a custom widget that teaches the concept.",
+    "stack":  [
+                  "Next.js",
+                  "React",
+                  "Framer Motion"
+              ],
+    "tags":  [
+                 "interactive",
+                 "animated",
+                 "blog",
+                 "colorful"
+             ],
+    "location":  "Canada",
+    "social":  {
+                   "twitter":  "JoshWComeau",
+                   "github":  "joshwcomeau"
+               },
+    "added":  "2026-01-15"
+}

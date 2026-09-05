@@ -1,0 +1,125 @@
+name: Submit a portfolio
+description: Add your portfolio to the list. No git knowledge needed.
+title: "[Portfolio] "
+labels: ["submission"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill this in and a maintainer will open the pull request for you.
+
+        Prefer doing it yourself? Add one file to `data/portfolios/` — see
+        [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md). It takes about two
+        minutes and your pull request cannot conflict with anyone else's.
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: How you want to be credited.
+      placeholder: Jane Doe
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Portfolio URL
+      description: Must be live and served over https.
+      placeholder: https://janedoe.com
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source code
+      description: Optional, but it is the main reason people browse this list.
+      placeholder: https://github.com/janedoe/portfolio
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What makes it distinct
+      description: |
+        One sentence, 20–160 characters.
+
+        "My personal portfolio" will be rejected — it tells a reader nothing.
+        Say what someone would come to look at: an unusual layout, a specific
+        interaction, how the case studies are structured.
+      placeholder: Case studies laid out as annotated timelines, with the design decisions shown alongside the outcome.
+    validations:
+      required: true
+
+  - type: input
+    id: stack
+    attributes:
+      label: Stack
+      description: Comma separated, up to 8. Only what is actually notable.
+      placeholder: Next.js, Tailwind CSS, Framer Motion
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: tags
+    attributes:
+      label: Style
+      description: How the site feels, not what it is built with. Pick up to 5.
+      options:
+        - label: minimal
+        - label: brutalist
+        - label: animated
+        - label: "3d"
+        - label: interactive
+        - label: typography
+        - label: dark
+        - label: colorful
+        - label: illustrated
+        - label: experimental
+        - label: blog
+        - label: designer
+        - label: developer
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Optional.
+      placeholder: Jakarta, Indonesia
+    validations:
+      required: false
+
+  - type: input
+    id: github
+    attributes:
+      label: GitHub handle
+      description: Just the handle, no @ or URL.
+      placeholder: janedoe
+    validations:
+      required: false
+
+  - type: input
+    id: twitter
+    attributes:
+      label: X handle
+      description: Just the handle, no @ or URL.
+      placeholder: janedoe
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before submitting
+      options:
+        - label: This is my own portfolio, or I have the author's permission
+          required: true
+        - label: The site is live and loads over https
+          required: true
+        - label: It is not already in the list
+          required: true

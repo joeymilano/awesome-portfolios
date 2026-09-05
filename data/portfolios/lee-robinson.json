@@ -1,0 +1,23 @@
+{
+    "slug":  "lee-robinson",
+    "name":  "Lee Robinson",
+    "url":  "https://leerob.com",
+    "source":  "https://github.com/leerob/site",
+    "description":  "Content-first personal site that doubles as a reference implementation for the Next.js App Router.",
+    "stack":  [
+                  "Next.js",
+                  "MDX",
+                  "Tailwind CSS"
+              ],
+    "tags":  [
+                 "minimal",
+                 "blog",
+                 "developer"
+             ],
+    "location":  "United States",
+    "social":  {
+                   "twitter":  "leeerob",
+                   "github":  "leerob"
+               },
+    "added":  "2026-01-15"
+}

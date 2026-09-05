@@ -1,0 +1,32 @@
+{
+  "name": "awesome-portfolios",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A showcase of developer and designer portfolios. One JSON file per submission, so contributions never conflict.",
+  "type": "module",
+  "scripts": {
+    "validate": "tsx scripts/validate.ts",
+    "build": "tsx scripts/build-readme.ts",
+    "build:site": "tsx scripts/build-site.ts",
+    "check": "npm run validate && npm run build && npm run build:site",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "portfolio", "showcase", "developer-portfolio", "web-design",
+    "inspiration", "awesome", "hacktoberfest"
+  ],
+  "author": "MhmmdFaizal04",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MhmmdFaizal04/awesome-portfolios"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

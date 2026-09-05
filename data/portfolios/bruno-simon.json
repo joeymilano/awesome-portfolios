@@ -1,0 +1,23 @@
+{
+    "slug":  "bruno-simon",
+    "name":  "Bruno Simon",
+    "url":  "https://bruno-simon.com",
+    "source":  "https://github.com/brunosimon/folio-2019",
+    "description":  "Portfolio as a drivable 3D world. You steer a car around the projects instead of scrolling past them.",
+    "stack":  [
+                  "Three.js",
+                  "WebGL",
+                  "Cannon.js"
+              ],
+    "tags":  [
+                 "3d",
+                 "experimental",
+                 "interactive"
+             ],
+    "location":  "France",
+    "social":  {
+                   "twitter":  "bruno_simon",
+                   "github":  "brunosimon"
+               },
+    "added":  "2026-01-15"
+}

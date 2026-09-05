@@ -1,0 +1,22 @@
+{
+    "slug":  "jhey-tompkins",
+    "name":  "Jhey Tompkins",
+    "url":  "https://jhey.dev",
+    "description":  "CSS demos pushed well past what most people think the language can do, all documented in the open.",
+    "stack":  [
+                  "CSS",
+                  "GSAP",
+                  "JavaScript"
+              ],
+    "tags":  [
+                 "animated",
+                 "experimental",
+                 "colorful"
+             ],
+    "location":  "United Kingdom",
+    "social":  {
+                   "twitter":  "jh3yy",
+                   "github":  "jh3y"
+               },
+    "added":  "2026-01-15"
+}

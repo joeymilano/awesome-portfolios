@@ -1,0 +1,23 @@
+{
+    "slug":  "cassie-evans",
+    "name":  "Cassie Evans",
+    "url":  "https://www.cassie.codes",
+    "source":  "https://github.com/cassiecodes/cassie-codes-v2",
+    "description":  "SVG and motion work from a GSAP engineer, with animation used to explain rather than decorate.",
+    "stack":  [
+                  "Gatsby",
+                  "GSAP",
+                  "SVG"
+              ],
+    "tags":  [
+                 "animated",
+                 "illustrated",
+                 "developer"
+             ],
+    "location":  "United Kingdom",
+    "social":  {
+                   "twitter":  "cassiecodes",
+                   "github":  "cassiecodes"
+               },
+    "added":  "2026-01-15"
+}

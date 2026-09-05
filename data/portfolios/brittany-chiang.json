@@ -1,0 +1,22 @@
+{
+    "slug":  "brittany-chiang",
+    "name":  "Brittany Chiang",
+    "url":  "https://brittanychiang.com",
+    "source":  "https://github.com/bchiang7/v4",
+    "description":  "Restrained developer portfolio with a fixed sidebar, sharp typography, and one of the most forked layouts on GitHub.",
+    "stack":  [
+                  "Gatsby",
+                  "React",
+                  "Styled Components"
+              ],
+    "tags":  [
+                 "minimal",
+                 "dark",
+                 "developer"
+             ],
+    "location":  "United States",
+    "social":  {
+                   "github":  "bchiang7"
+               },
+    "added":  "2026-01-15"
+}
