@@ -2,7 +2,7 @@
  * Showcase site generator.
  *
  * Produces one self-contained HTML file with client-side filtering. No build
- * step, no framework, no assets â€” it can be served straight from GitHub Pages
+ * step, no framework, no assets — it can be served straight from GitHub Pages
  * and opened from disk.
  *
  *   npm run build:site
@@ -36,7 +36,7 @@ function buildSite(entries: Portfolio[]): string {
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Awesome Portfolios â€” ${entries.length} developer &amp; designer portfolios</title>
+<title>Awesome Portfolios — ${entries.length} developer &amp; designer portfolios</title>
 <meta name="description" content="A curated showcase of ${entries.length} developer and designer portfolios, with source code where it exists."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -120,7 +120,7 @@ footer a{color:var(--ac)}
 
 <div class="wrap">
   <div class="hero">
-    <div class="eyebrow">${entries.length} portfolios Â· ${entries.filter((e) => e.source).length} with source</div>
+    <div class="eyebrow">${entries.length} portfolios · ${entries.filter((e) => e.source).length} with source</div>
     <h1>Portfolios worth<br><em>stealing from.</em></h1>
     <p class="lede">Developer and designer portfolios, with links to the source code where it is public. Filter by stack or by how the thing actually feels.</p>
     <a href="https://github.com/${REPO}/issues/new?template=submit-portfolio.yml" class="cta" target="_blank" rel="noopener">Submit yours</a>
@@ -146,7 +146,7 @@ footer a{color:var(--ac)}
 </div>
 
 <footer>
-  <p>CC0 Â· Listed portfolios belong to their authors Â· <a href="https://github.com/${REPO}" target="_blank" rel="noopener">Source</a></p>
+  <p>CC0 · Listed portfolios belong to their authors · <a href="https://github.com/${REPO}" target="_blank" rel="noopener">Source</a></p>
 </footer>
 
 <script>
@@ -241,7 +241,7 @@ async function main(): Promise<void> {
   await writeFile('site/index.html', buildSite(entries), 'utf-8')
 
   console.log('')
-  console.log(`  âœ“ site/index.html generated from ${entries.length} entries`)
+  console.log(`  ✓ site/index.html generated from ${entries.length} entries`)
   console.log('')
 }
 

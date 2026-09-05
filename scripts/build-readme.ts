@@ -25,14 +25,14 @@ function socialLinks(entry: Portfolio): string {
   if (linkedin) links.push(`[LinkedIn](https://linkedin.com/in/${linkedin})`)
   if (dribbble) links.push(`[Dribbble](https://dribbble.com/${dribbble})`)
 
-  return links.join(' Â· ')
+  return links.join(' · ')
 }
 
 function renderRow(entry: Portfolio): string {
   const name = `**[${entry.name}](${entry.url})**`
-  const source = entry.source ? ` Â· [source](${entry.source})` : ''
+  const source = entry.source ? ` · [source](${entry.source})` : ''
   const social = socialLinks(entry)
-  const socialCell = social ? ` Â· ${social}` : ''
+  const socialCell = social ? ` · ${social}` : ''
 
   const stack = entry.stack.map((s) => `\`${s}\``).join(' ')
   const tags = entry.tags.join(', ')
@@ -60,7 +60,7 @@ function renderTagIndex(entries: Portfolio[]): string {
   return TAGS
     .filter((tag) => counts.has(tag))
     .map((tag) => `\`${tag}\` ${counts.get(tag)}`)
-    .join(' Â· ')
+    .join(' · ')
 }
 
 function buildReadme(entries: Portfolio[]): string {
@@ -88,7 +88,7 @@ function buildReadme(entries: Portfolio[]): string {
 
 <br/>
 
-> A curated showcase of developer and designer portfolios â€” ${withSource} of the
+> A curated showcase of developer and designer portfolios — ${withSource} of the
 > ${entries.length} entries link to their source code.
 >
 > **Submitting yours takes about two minutes** and your pull request cannot
@@ -96,7 +96,7 @@ function buildReadme(entries: Portfolio[]): string {
 
 <br/>
 
-[**Browse with filters**](${SITE}) Â· [Submit yours](#submit-your-portfolio) Â· [Contributing](CONTRIBUTING.md)
+[**Browse with filters**](${SITE}) · [Submit yours](#submit-your-portfolio) · [Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -112,10 +112,10 @@ function buildReadme(entries: Portfolio[]): string {
 
 Two ways, both fine.
 
-**Without touching git** â€” [open a submission issue](https://github.com/${REPO}/issues/new?template=submit-portfolio.yml).
+**Without touching git** — [open a submission issue](https://github.com/${REPO}/issues/new?template=submit-portfolio.yml).
 Fill the form and a maintainer opens the pull request for you.
 
-**With a pull request** â€” add one file:
+**With a pull request** — add one file:
 
 \`\`\`jsonc
 // data/portfolios/your-name.json
@@ -133,7 +133,7 @@ Fill the form and a maintainer opens the pull request for you.
 }
 \`\`\`
 
-That is the entire change. Do not edit this README â€” it is generated from
+That is the entire change. Do not edit this README — it is generated from
 those files by \`npm run build\`.
 
 Run \`npm run validate\` first if you have Node installed. It catches the
@@ -155,7 +155,7 @@ review them.
 
 ## The list
 
-**${entries.length} portfolios** â€” ${renderTagIndex(entries)}
+**${entries.length} portfolios** — ${renderTagIndex(entries)}
 
 ${renderTable(sorted)}
 
@@ -166,7 +166,7 @@ ${renderTable(sorted)}
 Tags describe how a portfolio *feels*. The stack field already covers what it
 is built with.
 
-${TAGS.map((t) => `\`${t}\``).join(' Â· ')}
+${TAGS.map((t) => `\`${t}\``).join(' · ')}
 
 The list is closed on purpose. Free-form tags drift into fifty synonyms for
 "clean" within a month and the filters stop being useful. If something genuinely
@@ -183,7 +183,7 @@ email the maintainer. It comes down the same day, no questions asked.
 
 ## Licence
 
-[CC0 1.0](LICENSE) â€” public domain. The listed portfolios belong to their
+[CC0 1.0](LICENSE) — public domain. The listed portfolios belong to their
 respective authors.
 
 ---
@@ -209,7 +209,7 @@ async function main(): Promise<void> {
   await writeFile('README.md', buildReadme(entries), 'utf-8')
 
   console.log('')
-  console.log(`  âœ“ README.md generated from ${entries.length} entries`)
+  console.log(`  ✓ README.md generated from ${entries.length} entries`)
   console.log('')
 }
 
